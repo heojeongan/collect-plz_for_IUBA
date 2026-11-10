@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Pretendard', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    color: #ffe58a;
+    text-shadow: 0 0 10px rgba(255, 229, 138, 0.4);
+  }
+  
+  .progress-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1rem;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 16px;
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #555;
+  }
+  
+  #fill {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #ff9ed2, #ffe58a);
+    transition: width 0.3s ease;
+  }
+  
+  /* 퍼즐 판 (가로 9 x 세로 6 = 54조각) */
+  .puzzle-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2px;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background-color: #000;
+    border: 3px solid #ffe58a;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(255, 229, 138, 0.2);
+  }
+  
+  /* 퍼즐 조각 버튼 기본 스타일 */
+  .puzzle-piece {
+    background-image: url('puzzle.png'); /* 이미지 파일명 */
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+    
+    /* 숫자 텍스트 중앙 정렬 설정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.85);
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.9);
+    
+    /* 잠긴 상태: 어두운 화면 */
+    filter: brightness(0.08) contrast(1.2);
+    opacity: 0.7;
+  }
+  
+  .puzzle-piece:hover {
+    filter: brightness(0.25);
+    color: #ffe58a;
+  }
+  
+  /* 🌟 열린 상태 (이미지 밝아짐 + 숫자 숨김) */
+  .puzzle-piece.revealed {
+    filter: brightness(1) contrast(1);
+    opacity: 1;
+    color: transparent; /* 조각이 뒤집히면 숫자가 은은하게 사라집니다 */
+    text-shadow: none;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+  }
+  
+  .controls {
+    margin-top: 10px;
+  }
+  
+  #resetBtn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  #resetBtn:hover {
+    background: #cc0000;
+  }

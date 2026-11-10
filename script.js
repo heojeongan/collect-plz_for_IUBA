@@ -14,9 +14,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-// 10 x 5 = 50조각 설정
-const COLS = 10;
-const ROWS = 5;
+// 9 x 6 = 54조각 설정
+const COLS = 9;
+const ROWS = 6;
 const TOTAL_PIECES = COLS * ROWS;
 
 let revealedPieces = new Set();

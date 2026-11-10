@@ -16,7 +16,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 // 퍼즐 가로/세로 조각 수 설정 (가로 8 x 세로 5 = 총 40조각)
-const COLS = 10;
+const COLS = 11;
 const ROWS = 5;
 const TOTAL_PIECES = COLS * ROWS;
 

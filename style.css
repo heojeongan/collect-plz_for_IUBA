@@ -58,12 +58,12 @@
   /* 퍼즐 판 기본 틀 */
   .puzzle-grid {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     gap: 2px;
     width: 100%;
     max-width: 750px;
-    aspect-ratio: 2 / 1;
+    aspect-ratio: 3 / 2;
     background-color: #000;
     border: 3px solid #ffe58a;
     border-radius: 12px;

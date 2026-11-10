@@ -72,7 +72,7 @@
   
   /* 퍼즐 조각 개별 스타일 */
   .puzzle-piece {
-    background-image: url('천국을 향한 하나된 여정 퍼즐.png'); /* 이미지 파일명 */
+    background-image: url('puzzle.png'); /* 이미지 파일명 */
     background-repeat: no-repeat;
     cursor: pointer;
     border: none;

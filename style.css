@@ -58,7 +58,7 @@
   /* 퍼즐 판 설정 (가로 8조각 x 세로 5조각 기준) */
   .puzzle-grid {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 2px; /* 조각 구분선 */
     width: 100%;

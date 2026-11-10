@@ -55,7 +55,7 @@
     transition: width 0.3s ease;
   }
   
-  /* 퍼즐 판 설정 (가로 8조각 x 세로 5조각 기준) */
+  /* 퍼즐 판 설정 (가로 10조각 x 세로 5조각 기준) */
   .puzzle-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);

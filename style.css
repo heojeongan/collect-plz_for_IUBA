@@ -58,8 +58,8 @@
   /* 퍼즐 판 설정 (가로 10조각 x 세로 5조각 기준) */
   .puzzle-grid {
     display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     gap: 2px; /* 조각 구분선 */
     width: 100%;
     aspect-ratio: 4 / 3; /* 이미지 비율에 맞게 조정 가능 */

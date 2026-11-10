@@ -85,16 +85,16 @@
     align-items: center;
     font-size: 1.1rem;
     font-weight: bold;
-    color: rgba(255, 255, 255, 0.85);
+    color: #ffffff;
     text-shadow: 0 0 4px rgba(0, 0, 0, 0.9);
     
     /* 잠긴 상태: 어두운 화면 */
-    filter: brightness(0.08) contrast(1.2);
-    opacity: 0.7;
+    filter: brightness(0.2) contrast(1.1);
+    opacity: 0.9;
   }
   
   .puzzle-piece:hover {
-    filter: brightness(0.25);
+    filter: brightness(0.35);
     color: #ffe58a;
   }
   
